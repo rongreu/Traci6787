@@ -1,0 +1,21 @@
+#application: tongdai6992
+runtime: php55
+api_version: 1
+#version: 1
+default_expiration: "7d"
+
+handlers:
+- url: /
+  script: search/index.php
+- url: /css/*
+  static_dir: search/css
+- url: /js/*
+  static_dir: search/js
+- url: /lib/*
+  static_dir: search/lib
+- url: /less/*
+  static_dir: search/less
+- url: /img/*
+  static_dir: search/img
+- url: /.well-known/*
+  static_dir: .well-known
